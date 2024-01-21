@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asif Sultan Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a82219d269.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Sultan logo .jpeg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <i class="fa-brands fa-dev"></i>
+            <i class="fa-solid fa-bug"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <h1>Hi, I'm <span>Asif</span><br> Sultan from Kashmir</h1>
+        </div>
+    </div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Snapchat-1714922419.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1  class ="sub-title">About Me</h1>
+                <p> Greetings! I'm Asif Sultan, a self-taught developer with a background in customer service and technical support. My current focus is on mastering web development technologies, propelling me from Front-End development into the realm of a Full Stack Developer. I thrive on the ever-evolving nature of web technologies, constantly expanding my skill set across various languages and frameworks. Python holds a special place in my toolkit, contributing to my passion for crafting efficient and scalable solutions. My journey started with a commitment to customer-centric excellence, and now, blending that experience with technical prowess, I'm dedicated to creating compelling digital experiences. Join me on this exciting coding journey as we build the future together, one line of code at a time!
+                </p>
+                <div class="tab-titles">
+                    <p class ="tab-links active-link" onclick ="opentab('Skills')">Skills</p>
+                    <p class ="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class ="tab-links" onclick ="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Python</span><br>Strong hand in python </li>
+                        <li><span>Web Devlopment</span><br>Web app Devlopment</li>
+                        <li><span>App Devlopment</span><br>Building Android/IOS apps</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-contents" id="Experience" >
+                <ul> 
+                    <li><span>2022 - Current</span><br> UI/UX Designing And Web app Devlopment at Cloud IT Solutions</li>
+                    <li><span>2019-2022</span><br>Technical Support Specialist at Cloud IT Solutions</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-contents" id="Education">
+            <ul>
+                <li><span>2015-2019</span><br>Bachelor of Business Administration from University of Kashmir </li>
+            </ul>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1  class ="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Desing</h2>
+                <p>askfej ewkngwe gnwklrgnkw nrg lknrwgl kwrngk lwn wrkgl nrwk l</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>UI/UX Desing</h2>
+                <p>askfej ewkngwe gnwklrgnkw nrg lknrwgl kwrngk lwn wrkgl nrwk l</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Desing</h2>
+                <p>askfej ewkngwe gnwklrgnkw nrg lknrwgl kwrngk lwn wrkgl nrwk l</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+
+</body>
+</html>
